@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body>
+    <style>
+      details {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      summary {
+        display: flex;
+        cursor: pointer;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      summary h1 {
+        display: inline;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      summary .rich-title {
+        display: flex;
+        align-items: center;
+        max-width: 90%;
+      }
+
+      details p {
+        opacity: 0.7;
+        color: #004677;
+        padding: 1rem 0;
+        margin: 0;
+      }
+
+      details a {
+        background-color: #e94860;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        padding: 0.5rem 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      details .action {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+      }
+
+      details .action a {
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      details.item--empower summary {
+        background-color: #192e5a;
+        border: 3px solid #0a4682;
+      }
+
+      details.item--national summary {
+        background-color: #1f467e;
+      }
+
+      details.item--territory summary {
+        background-color: #2862a9;
+      }
+
+      details.item--prevention summary {
+        background-color: #459edd;
+      }
+
+      details.item--agreement summary {
+        background-color: #5ab3ce;
+      }
+
+      details .arrow {
+        height: 20px;
+      }
+
+      details[open] .arrow {
+        transform: rotate(180deg);
+      }
+
+      details .icon {
+        height: 50px;
+        width: 50px;
+      }
+    </style>
+    <details class="item--empower">
+      <summary>
+        <div class="rich-title">
+          <img
+            class="icon"
+            src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/empower.png"
+          />
+          <h1>Fortalecer las instituciones</h1>
+        </div>
+        <img
+          class="arrow"
+          src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/arrow.png"
+        />
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
+        nam quo voluptas sed vitae voluptatum consequatur! Nesciunt, mollitia
+        expedita! Tempore nisi unde debitis perspiciatis nemo quisquam repellat
+        quos facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Id repellat debitis, sapiente voluptatibus quas ipsum corrupti
+        voluptate, asperiores, inventore blanditiis deleniti at a iure ullam
+        fugiat placeat amet quo! Maxime aperiam, suscipit iusto quibusdam,
+        repudiandae enim quos minima illo omnis adipisci asperiores expedita
+        numquam ipsum atque voluptatem sint quae animi?
+      </p>
+      <div class="action">
+        <a href="https://juntosmasseguridad.cl/fortalecer-instituciones/"
+          >Seguir leyendo</a
+        >
+      </div>
+    </details>
+    <details class="item--national">
+      <summary>
+        <div class="rich-title">
+          <img
+            class="icon"
+            src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/national.png"
+          />
+          <h1>Impulsar una Política Nacional contra el crimen organizado</h1>
+        </div>
+        <img
+          class="arrow"
+          src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/arrow.png"
+        />
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
+        nam quo voluptas sed vitae voluptatum consequatur! Nesciunt, mollitia
+        expedita! Tempore nisi unde debitis perspiciatis nemo quisquam repellat
+        quos facilis!
+      </p>
+      <div class="action">
+        <a href="https://juntosmasseguridad.cl/politica-nacional/"
+          >Seguir leyendo</a
+        >
+      </div>
+    </details>
+    <details class="item--territory">
+      <summary>
+        <div class="rich-title">
+          <img
+            class="icon"
+            src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/territory.png"
+          />
+          <h1>Intervenir territorios con planes concretos</h1>
+        </div>
+        <img
+          class="arrow"
+          src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/arrow.png"
+        />
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
+        nam quo voluptas sed vitae voluptatum consequatur! Nesciunt, mollitia
+        expedita! Tempore nisi unde debitis perspiciatis nemo quisquam repellat
+        quos facilis!
+      </p>
+      <div class="action">
+        <a href="https://juntosmasseguridad.cl/planes-concretos/"
+          >Seguir leyendo</a
+        >
+      </div>
+    </details>
+    <details class="item--prevention">
+      <summary>
+        <div class="rich-title">
+          <img
+            class="icon"
+            src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/prevention.png"
+          />
+          <h1>Reforzar la prevención</h1>
+        </div>
+        <img
+          class="arrow"
+          src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/arrow.png"
+        />
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
+        nam quo voluptas sed vitae voluptatum consequatur! Nesciunt, mollitia
+        expedita! Tempore nisi unde debitis perspiciatis nemo quisquam repellat
+        quos facilis!
+      </p>
+      <div class="action">
+        <a href="https://juntosmasseguridad.cl/reforzar-prevencion/"
+          >Seguir leyendo</a
+        >
+      </div>
+    </details>
+    <details class="item--agreement">
+      <summary>
+        <div class="rich-title">
+          <img
+            class="icon"
+            src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/agreement.png"
+          />
+          <h1>Alcanzar acuerdos de Estado en seguridad</h1>
+        </div>
+        <img
+          class="arrow"
+          src="https://s3.amazonaws.com/gobcl-prod/public_files/Campa%C3%B1as/hitosGob/iconos/arrow.png"
+        />
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat vero,
+        nam quo voluptas sed vitae voluptatum consequatur! Nesciunt, mollitia
+        expedita! Tempore nisi unde debitis perspiciatis nemo quisquam repellat
+        quos facilis!
+      </p>
+      <div class="action">
+        <a href="https://juntosmasseguridad.cl/acuerdos-estado/"
+          >Seguir leyendo</a
+        >
+      </div>
+    </details>
+  </body>
+</html>
